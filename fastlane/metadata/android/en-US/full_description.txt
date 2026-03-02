@@ -1,7 +1,7 @@
 Tired of intrusive ads slowing down your phone?
 BlockAds blocks ads across all your apps and browsers with just one tap — no root required.
 
-KEY FEATURES
+<b>KEY FEATURES</b>
 
 - System-Wide Ad Blocking: Smart DNS-based filtering for every app and browser. No root access required.
 - Privacy Protection: Blocks trackers and spyware. Zero data collection — everything stays locally on your device.
@@ -13,27 +13,23 @@ KEY FEATURES
 - Backup & Restore: Export your configuration to JSON and easily import it on a new device.
 - Battery & Data Friendly: Minimal performance impact. Filters only DNS traffic, reducing unnecessary ad data downloads.
 
-HOW TO USE
+<b>HOW TO USE</b>
 
 - Open BlockAds.
 - Tap the power button and allow the VPN connection.
 - Enjoy an ad-free internet experience! (You can also toggle protection via Quick Settings tile or widget).
 
-FAQ
+<b>FAQ</b>
 
-- Is BlockAds safe?
+- Is BlockAds safe?  
 Yes. BlockAds only filters DNS queries locally. No personal data is intercepted or transmitted to external servers.
-
-- Why does it need VPN permission?
+- Why does it need VPN permission?  
 It creates a local VPN tunnel on your device to route and filter DNS requests on-device. It is not a remote VPN service.
-
-- Does it work with all apps?
+- Does it work with all apps?  
 Yes, it works system-wide. You can also whitelist specific apps or use the firewall feature to manage access.
-
-- Is it really free?
+- Is it really free?  
 Yes! BlockAds is 100% free, open-source, and contains no in-app purchases or ads.
-
-- Will it slow down my internet?
+- Will it slow down my internet?  
 No. DNS filtering is extremely lightweight. It actually speeds up your browsing and saves battery by preventing ads from loading.
 
 BlockAds is free, open source, and built with privacy in mind. Download now and take back control of your Android experience!
