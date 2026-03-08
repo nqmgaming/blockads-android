@@ -29,5 +29,5 @@ keystore.txt
 play-store-key.json
 .kotlin
 
-# Bundled filter lists (downloaded during CI build)
-app/src/main/assets/bundled_filters/
+# Bundled filter lists – committed to repo for reproducible builds
+# Run ./scripts/bundle_filters.sh before tagging a release to update
