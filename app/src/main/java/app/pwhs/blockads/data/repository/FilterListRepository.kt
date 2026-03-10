@@ -130,13 +130,6 @@ class FilterListRepository(
                 isBuiltIn = true
             ),
             FilterList(
-                name = "Fanboy's Annoyances",
-                url = "https://easylist.to/easylist/fanboy-annoyance.txt",
-                description = "Blocks cookie banners, pop-ups, newsletter prompts, and chat boxes",
-                isEnabled = false,
-                isBuiltIn = true
-            ),
-            FilterList(
                 name = "AdGuard Social Media",
                 url = "https://filters.adtidy.org/extension/ublock/filters/4.txt",
                 description = "Blocks social media widgets — like buttons, share buttons, and embeds",
