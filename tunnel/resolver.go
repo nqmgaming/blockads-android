@@ -54,7 +54,7 @@ type Resolver struct {
 	// HTTP client for DoH (reusable)
 	httpClient *http.Client
 	// QUIC connection for DoQ (reusable)
-	quicConn   *quic.Conn
+	quicConn   quic.Connection
 	quicMu     sync.Mutex
 	quicServer string
 }
@@ -370,7 +370,7 @@ func (r *Resolver) queryDoQ(rawQuery []byte, doqURL string) ([]byte, error) {
 }
 
 // getOrCreateQUICConn returns existing QUIC connection or creates a new one.
-func (r *Resolver) getOrCreateQUICConn(host, port string) (*quic.Conn, error) {
+func (r *Resolver) getOrCreateQUICConn(host, port string) (quic.Connection, error) {
 	r.quicMu.Lock()
 	defer r.quicMu.Unlock()
 
