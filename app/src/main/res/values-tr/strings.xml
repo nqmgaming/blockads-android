@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_tagline">"Reklamsız Tarama"</string>
+    <string name="notification_channel_name">"Reklam Engelleyici Hizmeti"</string>
+    <string name="notification_channel_description">"VPN reklam engelleyicisinin etkin olup olmadığını gösterir."</string>
+    <string name="vpn_notification_title">"BlockAds aktif durumda."</string>
+    <string name="vpn_notification_text">"Cihazınızı reklamlardan koruma"</string>
+    <string name="vpn_notification_reconnecting">"BlockAds yeniden bağlantı kuruyor."</string>
+    <string name="vpn_notification_reconnecting_text">"Ağ değişti, VPN bağlantısı yeniden kuruluyor…"</string>
+    <string name="vpn_notification_retrying">"BlockAds yeniden deniyor."</string>
+    <string name="vpn_notification_retry_text">"Yeniden deneme girişimi %1$d / %2$d"</string>
+    <string name="vpn_notification_stats_text">"Engellenen %1$d | Sorgular %2$d | Çalışma Süresi %3$d"</string>
+    <string name="vpn_alert_channel_name">"VPN Uyarıları"</string>
+    <string name="vpn_alert_channel_description">"VPN durum değişiklikleriyle ilgili önemli uyarılar"</string>
+    <string name="vpn_revoked_title">"Reklam engelleme durduruldu"</string>
+    <string name="vpn_revoked_text">"Başka bir VPN uygulaması bağlantıyı devraldı. BlockAds'i yeniden etkinleştirmek için dokunun."</string>
+    <string name="vpn_stopped_title">"BlockAds duraklatıldı."</string>
+    <string name="vpn_stopped_text">"Reklam engelleme devre dışı bırakıldı. Yeniden başlatmak için Etkinleştir'e dokunun."</string>
+    <string name="vpn_stopped_action_enable">"Olanak vermek"</string>
+    <string name="status_protected">"Korunmuş"</string>
+    <string name="status_connecting">"Bağlantı kurmak"</string>
+    <string name="status_unprotected">"Korumasız"</string>
+    <string name="total_queries">"Toplam Sorgular"</string>
+    <string name="blocked_queries">"Engellendi"</string>
+    <string name="nav_home">"Ev"</string>
+    <string name="nav_logs">"Günlükler"</string>
+    <string name="nav_filter">"Filtrele"</string>
+    <string name="nav_settings">"Ayarlar"</string>
+    <string name="settings_filter_url">"Filtre Listesi URL'si"</string>
+    <string name="settings_update_filter">"Filtre Listesini Güncelle"</string>
+    <string name="filter_updating">"Filtre listesi güncelleniyor…"</string>
+    <string name="filter_updated">"Filtre listesi güncellendi: %d alan adı"</string>
+    <string name="filter_update_failed">"Filtre listesi güncellenemedi."</string>
+    <string name="filter_detail_enabled">"Etkinleştirilmiş"</string>
+    <string name="filter_detail_rules">"Tüzük"</string>
+    <string name="filter_detail_last_updated">"Son güncelleme"</string>
+    <string name="filter_detail_update">"Güncelleme"</string>
+    <string name="filter_detail_delete">"Silmek"</string>
+    <string name="filter_detail_domain_preview">"Engellenen Alan Adları Önizlemesi"</string>
+    <string name="filter_detail_no_domains">"Önbelleğe alınmış alan adı yok. Öncelikle bu filtreyi güncellemeyi deneyin."</string>
+    <string name="filter_detail_more_domains">"… ve %s daha fazla alan adı"</string>
+    <string name="logs_empty">"Henüz hiçbir DNS sorgusu kaydedilmedi."</string>
+    <string name="logs_filter_all">"Tüm"</string>
+    <string name="logs_filter_blocked">"Engellendi"</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">"Reklamları Akıllıca Engelleyin"</string>
+    <string name="onboarding_desc_1">"Tek dokunuşla tüm uygulamalar ve tarayıcılardaki reklamları engelleyin. DNS filtreleme teknolojisini kullanır — root erişimi gerekmez.
+
+🔒 Gizlilik sözü: Tarama verilerinizi asla toplamayız, saklamayız veya iletmeyiz. Tüm işlemler yalnızca cihazınızda gerçekleşir."</string>
+    <string name="onboarding_title_2">"Gizliliğiniz Korunuyor"</string>
+    <string name="onboarding_desc_2">"Veri toplama yok. İzleme yok. Tüm DNS kayıtları yalnızca cihazınızda kalır. Tarama etkinliğinizi asla görmeyiz."</string>
+    <string name="onboarding_title_3">"Ücretsiz ve Açık Kaynak"</string>
+    <string name="onboarding_desc_3">"BlockAds tamamen ücretsizdir ve uygulama içi satın alım içermez. Kaynak kodumuz herkesin incelemesi ve doğrulaması için açıktır."</string>
+    <string name="onboarding_skip">"Atlamak"</string>
+    <string name="onboarding_next">"Sonraki"</string>
+    <string name="onboarding_get_started">"Başlayın"</string>
+    <string name="onboarding_recommended">"★ Tavsiye Edilir"</string>
+
+    <!-- Onboarding: Protection Level -->
+    <string name="onboarding_protection_title">"Koruma Seviyesini Seçin"</string>
+    <string name="onboarding_protection_desc">"Reklamları ve izleyicileri ne kadar agresif bir şekilde engellemek istediğinizi seçin."</string>
+    <string name="onboarding_protection_basic">"Temel"</string>
+    <string name="onboarding_protection_basic_desc">"Başlıca reklam ağlarını engeller. Web sitesi işlevselliği üzerinde minimum etki yaratır."</string>
+    <string name="onboarding_protection_standard">"Standart"</string>
+    <string name="onboarding_protection_standard_desc">"Reklamları, izleyicileri ve analiz araçlarını engelleyin. Koruma ve uyumluluk arasında iyi bir denge."</string>
+    <string name="onboarding_protection_strict">"Sıkı"</string>
+    <string name="onboarding_protection_strict_desc">"Maksimum engelleme. Bazı web sitesi işlevlerini etkileyebilir ancak en güçlü korumayı sağlar."</string>
+
+    <!-- Onboarding: DNS Server -->
+    <string name="onboarding_dns_title">"DNS Sunucusu Seçin"</string>
+    <string name="onboarding_dns_desc">"Alan adlarını çözümlemek için bir DNS sunucusu seçin. Bunu daha sonra Ayarlar'da değiştirebilirsiniz."</string>
+
+    <!-- Onboarding: VPN Permission -->
+    <string name="onboarding_vpn_title">"VPN İzni Gerekli"</string>
+    <string name="onboarding_vpn_desc">"BlockAds, DNS sorgularını filtrelemek ve reklamları engellemek için yerel bir VPN kullanır. Cihazınızdan hiçbir veri dışarı çıkmaz; bu VPN yalnızca yerel olarak çalışarak DNS isteklerini yakalar ve filtreler."</string>
+    <string name="onboarding_vpn_grant">"VPN İzni Ver"</string>
+
+    <!-- Onboarding: Notification Permission -->
+    <string name="onboarding_notification_title">"Bilgi sahibi olun"</string>
+    <string name="onboarding_notification_desc">"Gerçek zamanlı engelleme istatistiklerini görmek ve korumanızın ne zaman aktif olduğunu öğrenmek için bildirimlere izin verin. Android 13 ve üzeri sürümlerde kalıcı VPN bildirimi için gereklidir."</string>
+    <string name="onboarding_notification_grant">"Bildirimlere İzin Ver"</string>
+
+    <!-- Onboarding: Battery Optimization -->
+    <string name="onboarding_battery_title">"Korumayı Çalışır Durumda Tutun"</string>
+    <string name="onboarding_battery_desc">"BlockAds'i pil optimizasyonundan hariç tutun, böylece VPN hizmeti arka planda aktif kalır ve sistem tarafından kapatılmaz."</string>
+    <string name="onboarding_battery_grant">"Pil Optimizasyonunu Devre Dışı Bırak"</string>
+
+    <!-- Onboarding: Permission Granted -->
+    <string name="onboarding_permission_granted">"✓ İzin verildi"</string>
+
+    <!-- Onboarding: Completion -->
+    <string name="onboarding_complete_title">"Artık Koruma Altındasınız!"</string>
+    <string name="onboarding_complete_desc">"Tebrikler! BlockAds yapılandırıldı ve cihazınızı reklamlardan ve izleyicilerden korumaya hazır."</string>
+    <string name="onboarding_complete_stats">"Korumayı etkinleştirmek için \"Başla\"ya dokunun."</string>
+
+    <!-- Whitelist Apps -->
+    <string name="whitelist_apps_title">"Beyaz Listeye Alınan Uygulamalar"</string>
+    <string name="whitelist_apps_subtitle">"Bu uygulamalar reklam engellemeyi devre dışı bırakacaktır."</string>
+    <string name="whitelist_apps_search">"Arama uygulamaları…"</string>
+    <string name="whitelist_apps_empty">"Hiçbir uygulama yüklü değil."</string>
+    <string name="whitelist_apps_count">"%d uygulama beyaz listeye alındı"</string>
+    <string name="whitelist_tab_user">"Kullanıcı Uygulamaları"</string>
+    <string name="whitelist_tab_system">"Sistem Uygulamaları"</string>
+
+    <!-- Whitelist Domains -->
+    <string name="whitelist_domains_title">"Beyaz Listeye Alınmış Alan Adları"</string>
+    <string name="whitelist_domains_subtitle">"Bu alan adları asla engellenmeyecek."</string>
+    <string name="whitelist_domains_add">"Alan Adı Ekle"</string>
+    <string name="whitelist_domains_hint">"örneğin example.com"</string>
+    <string name="whitelist_domains_empty">"Beyaz listeye alınmış alan adları yok."</string>
+    <string name="whitelist_domain_added">"Alan adı beyaz listeye eklendi: %s"</string>
+    <string name="whitelist_domain_removed">"Alan adı beyaz listeden kaldırıldı"</string>
+
+    <!-- About -->
+    <string name="about_title">"Hakkında"</string>
+    <string name="about_description">"Ücretsiz, açık kaynaklı reklam engelleyici.
+Veri toplama yok. İzleme yok."</string>
+    <string name="about_version">"Sürüm %s"</string>
+    <string name="about_github">"Kaynak Kod (GitHub)"</string>
+    <string name="about_website">"Web sitesi"</string>
+    <string name="about_privacy_policy">"Gizlilik Politikası"</string>
+    <string name="about_contact">"Bize Ulaşın"</string>
+    <string name="about_licenses">"Açık Kaynak Lisansları"</string>
+    <string name="about_no_data">"🔒 Bu uygulama hiçbir kişisel veri toplamaz."</string>
+
+    <!-- Log Actions -->
+    <string name="log_action_whitelist">"Beyaz listeye ekle"</string>
+    <string name="log_action_copy">"Alan adını kopyala"</string>
+    <string name="log_search_hint">"Arama alanları…"</string>
+    <string name="domain_copied">"Alan adı kopyalandı"</string>
+    <string name="log_whitelisted">"Beyaz listeye alınmış: %s"</string>
+    <string name="log_already_whitelisted">"Zaten beyaz listeye alınmış"</string>
+
+    <!-- Test Block Ads -->
+    <string name="test_block_ads">"Reklam Engellemeyi Test Edin"</string>
+    <string name="test_block_ads_title">"Reklam Engellemeyi Test Edin"</string>
+
+    <!-- Home Screen -->
+    <string name="home_connecting_desc">"VPN bağlantısı kuruluyor…"</string>
+    <string name="home_protected_desc">"Cihazınız reklamlardan korunmaktadır."</string>
+    <string name="home_unprotected_desc">"Reklam engellemeyi etkinleştirmek için düğmeye dokunun."</string>
+    <string name="home_block_rate">"Blok Oranı"</string>
+    <string name="home_filter_rules">"Filtreleme Kuralları"</string>
+    <string name="home_recent_blocked">"Son zamanlarda engellenenler"</string>
+    <string name="home_data_saved">"Veriler Kaydedildi"</string>
+    <string name="home_protection_uptime">"Çalışma süresi"</string>
+    <string name="home_chart_24h">"24 Saat"</string>
+    <string name="home_chart_7d">"7 Gün"</string>
+    <string name="home_top_blocked">"En Çok Engellenen Alan Adları"</string>
+    <string name="home_chart_no_data">"Veri mevcut değil."</string>
+    <string name="settings_language">"Dil"</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">"Ayarlar"</string>
+    <string name="settings_search_hint">"Arama ayarları…"</string>
+    <string name="settings_search_clear">"Arama sonuçlarını temizle"</string>
+    <string name="settings_category_protection">"Koruma"</string>
+    <string name="settings_category_protection_desc">"DNS sunucusu, protokol, otomatik yeniden bağlantı"</string>
+    <string name="settings_category_interface">"Arayüz"</string>
+    <string name="settings_category_interface_desc">"Tema, dil"</string>
+    <string name="settings_category_apps">"Uygulamalar"</string>
+    <string name="settings_category_apps_desc">"Uygulama beyaz listesi, uygulama bazlı ayarlar"</string>
+    <string name="settings_category_filters">"Filtreler"</string>
+    <string name="settings_category_filters_desc">"Filtre yönetimi, otomatik güncelleme, özel kurallar"</string>
+    <string name="settings_category_data">"Veri"</string>
+    <string name="settings_category_data_desc">"Dışa Aktarma/İçe Aktarma, kayıtları temizleme"</string>
+    <string name="settings_category_info">"Bilgi"</string>
+    <string name="settings_category_info_desc">"Hakkımızda, gizlilik politikası, kaynak kod"</string>
+    <string name="settings_appearance">"Dış görünüş"</string>
+    <string name="settings_theme">"Tema"</string>
+    <string name="settings_theme_system">"Sistem"</string>
+    <string name="settings_theme_light">"Işık"</string>
+    <string name="settings_theme_dark">"Karanlık"</string>
+    <string name="settings_lang_system">"Sistem"</string>
+    <string name="settings_high_contrast">"Yüksek Kontrast"</string>
+    <string name="settings_high_contrast_desc">"Daha iyi görünürlük için kontrastı artırın."</string>
+    <string name="settings_accent_color">"Vurgu Rengi"</string>
+    <string name="settings_accent_color_desc">"Uygulamanın ana rengini özelleştirin."</string>
+    <string name="accent_green">"Yeşil"</string>
+    <string name="accent_blue">"Mavi"</string>
+    <string name="accent_purple">"Mor"</string>
+    <string name="accent_orange">"Turuncu"</string>
+    <string name="accent_pink">"Pembe"</string>
+    <string name="accent_teal">"Turkuaz"</string>
+    <string name="accent_dynamic">"Dinamik (Materyal Siz)"</string>
+    <string name="accent_dynamic_desc">"Duvar kağıdınızın renklerini kullanır."</string>
+    <string name="settings_connection">"Bağlantı"</string>
+    <string name="settings_filter_lists">"Filtre Listeleri (%d aktif)"</string>
+    <string name="settings_add_custom_filter">"Özel Filtre Listesi Ekle"</string>
+    <string name="settings_updating">"Güncelleniyor…"</string>
+    <string name="settings_update_all">"Tüm Filtreleri Güncelle"</string>
+    <string name="settings_dns_config">"DNS Yapılandırması"</string>
+    <string name="settings_save_dns">"DNS'i kaydet"</string>
+    <string name="settings_whitelist">"Beyaz liste"</string>
+    <string name="settings_whitelist_apps">"Beyaz Listeye Alınan Uygulamalar"</string>
+    <string name="settings_whitelist_apps_desc">"Uygulamaları reklam engellemeden hariç tut"</string>
+    <string name="settings_whitelist_domains">"Beyaz Listeye Alınmış Alan Adları"</string>
+    <string name="settings_whitelist_domains_desc">"Bu alan adları asla engellenmeyecek."</string>
+    <string name="settings_add_domain">"Alan Adı Ekle"</string>
+    <string name="settings_data_backup">"Veri ve Yedekleme"</string>
+    <string name="settings_export">"İhracat"</string>
+    <string name="settings_import">"İçe aktarmak"</string>
+    <string name="settings_about">"Hakkında"</string>
+    <string name="settings_about_desc">"Sürüm, gizlilik politikası, kaynak kod"</string>
+    <string name="settings_add_filter_title">"Filtre Listesi Ekle"</string>
+    <string name="settings_add_filter_name">"İsim"</string>
+    <string name="settings_add_filter_url">"URL (hosts formatı)"</string>
+    <string name="settings_add">"Eklemek"</string>
+    <string name="settings_cancel">"İptal etmek"</string>
+    <string name="settings_add_domain_title">"Beyaz listeye alınmış alan adını ekle"</string>
+    <string name="settings_add_domain_hint">"Alan adı (ör. example.com)"</string>
+    <string name="settings_auto_reconnect">"Otomatik yeniden bağlantı"</string>
+    <string name="settings_auto_reconnect_desc">"Cihaz açılışında reklam engelleyiciyi yeniden başlat."</string>
+    <string name="settings_safe_search">"Güvenli Arama"</string>
+    <string name="settings_safe_search_desc">"Desteklenen arama motorlarında (Google, Bing) güvenli aramayı zorunlu kıl"</string>
+    <string name="settings_youtube_restricted">"YouTube Kısıtlı Modu"</string>
+    <string name="settings_youtube_restricted_desc">"YouTube'daki yetişkinlere yönelik videoları filtreleyin, diğer sitelerdeki gömülü yetişkinlere yönelik videoları engelleyin ve tüm yorumları gizleyin."</string>
+    <string name="settings_dns_protocol">"DNS Protokolü"</string>
+    <string name="settings_dns_protocol_plain">"Düz DNS"</string>
+    <string name="settings_dns_protocol_doh">"Sağlık Bakanlığı"</string>
+    <string name="settings_dns_protocol_dot">"Nokta"</string>
+    <string name="settings_dns_protocol_doq">"DoQ"</string>
+    <string name="settings_doh_server_url">"DoH Sunucu URL'si"</string>
+    <string name="settings_save_doh_url">"DoH URL'sini kaydet"</string>
+    <string name="settings_dot_server">"DoT Sunucusu (ana bilgisayar adı veya IP adresi)"</string>
+    <string name="settings_dot_server_placeholder">"dns.google"</string>
+    <string name="settings_doq_server_url">"DoQ Sunucu URL'si"</string>
+    <string name="settings_upstream_dns">"Yukarı Akış DNS Sunucusu"</string>
+    <string name="settings_fallback_dns">"Yedek DNS Sunucusu"</string>
+    <string name="settings_fallback_dns_desc">"Birincil DNS sunucunuz arızalandığında yedek DNS kullanılır. Her zaman düz UDP protokolünü kullanır."</string>
+    <string name="settings_fallback_dns_short_desc">"Birincil DNS sunucusu çalışmadığında yedek olarak kullanılır (düz UDP)."</string>
+    <string name="dns_category_fallback">"Geri çekilmek"</string>
+    <string name="settings_fallback_dns_not_set">"Ayarlanmadı (yedekleme yok)"</string>
+    <string name="settings_custom_dns_server">"Özel DNS Sunucusu"</string>
+    <string name="settings_custom_dns_hint">"Düz DNS için IP adresini, DoH için https:// adresini, DoT için tls:// adresini veya DoQ için quic:// adresini girin."</string>
+    <string name="settings_detected_plain">"Düz DNS"</string>
+    <string name="settings_detected_doh">"DNS-over-HTTPS (DoH)"</string>
+    <string name="settings_detected_dot">"DNS-over-TLS (DoT)"</string>
+    <string name="settings_detected_doq">"DNS-over-QUIC (DoQ)"</string>
+    <string name="settings_detected_protocol">"Tespit edildi: %s"</string>
+    <string name="settings_invalid_dns_input">"Geçersiz DNS sunucu adresi"</string>
+    <string name="settings_save_custom_dns">"DNS'i kaydet"</string>
+    <string name="settings_dns_response_type">"DNS yanıt türü"</string>
+    <string name="settings_dns_response_type_desc">"Engellenen alan adları için yanıt türü"</string>
+    <string name="dns_response_nxdomain_desc">"Alan adı mevcut değil (standart)."</string>
+    <string name="dns_response_refused_desc">"Sorgu reddedildi (daha iyi uyumluluk)"</string>
+    <string name="dns_response_custom_ip">"Özel IP (0.0.0.0)"</string>
+    <string name="dns_response_custom_ip_desc">"Boş bir rota adresi döndür (varsayılan)"</string>
+    <string name="settings_clear_logs">"Tüm Kayıtları Temizle"</string>
+    <string name="dns_error_notification_title">"DNS yapılandırma hatası"</string>
+    <string name="dns_error_notification_no_fallback">"%1$s'nin %2$s'ye bağlantısı başarısız oldu. Yedek DNS yapılandırılmamış; web siteleri yüklenmeyebilir. DNS ayarlarınızı kontrol edin."</string>
+    <string name="dns_error_notification_both_failed">"%1$s'nin %2$s'ye ve yedek %3$s'ye olan bağlantısı başarısız oldu. Web siteleri yüklenmeyebilir. DNS ayarlarınızı kontrol edin."</string>
+
+    <!-- Filter Setup Screen -->
+    <string name="filter_setup_title">"Filtre Ayarları"</string>
+    <string name="filter_setup_desc">"Yerleşik ve özel filtre listelerini yönetin"</string>
+    <string name="filter_built_in">"Dahili"</string>
+    <string name="filter_custom">"Gelenek"</string>
+    <string name="filter_custom_empty">"Henüz özel filtre eklenmedi."</string>
+    <string name="filter_search_hint">"Arama filtreleri…"</string>
+    <string name="filter_search_no_results">"\"%s\" için hiçbir filtre bulunamadı."</string>
+    <string name="filter_log_cleared">"Günlük temizlendi"</string>
+    <string name="filter_domain_whitelisted">"Alan adı beyaz listeye eklendi: %s"</string>
+    <string name="filter_domain_already_whitelisted">"Alan adı zaten beyaz listeye alınmış."</string>
+    <string name="filter_settings_export">"Ayarlar dışa aktarıldı"</string>
+    <string name="filter_export_failed">"Dışa aktarma başarısız oldu: %s"</string>
+    <string name="filter_settings_imported">"Ayarlar içe aktarıldı"</string>
+    <string name="filter_import_failed">"İçe aktarma başarısız oldu: %s"</string>
+
+    <!-- Auto-update Filter Lists -->
+    <string name="settings_auto_update">"Filtre Listelerini Otomatik Güncelle"</string>
+    <string name="settings_auto_update_enabled">"Otomatik güncellemeyi etkinleştir"</string>
+    <string name="settings_auto_update_enabled_desc">"Filtre listelerini arka planda otomatik olarak güncelleyin."</string>
+    <string name="settings_auto_update_frequency">"Güncelleme sıklığı"</string>
+    <string name="settings_auto_update_frequency_6h">"Her 6 saatte bir"</string>
+    <string name="settings_auto_update_frequency_12h">"Her 12 saatte bir"</string>
+    <string name="settings_auto_update_frequency_24h">"Her 24 saatte bir"</string>
+    <string name="settings_auto_update_frequency_48h">"Her 48 saatte bir"</string>
+    <string name="settings_auto_update_frequency_manual">"Sadece kullanım kılavuzu"</string>
+    <string name="settings_auto_update_wifi_only">"Yalnızca Wi-Fi"</string>
+    <string name="settings_auto_update_wifi_only_desc">"Yalnızca Wi-Fi'ye bağlıyken güncelleyin."</string>
+    <string name="settings_auto_update_notification">"Güncelleme bildirimleri"</string>
+    <string name="settings_auto_update_notification_normal">"Normal"</string>
+    <string name="settings_auto_update_notification_silent">"Sessiz"</string>
+    <string name="settings_auto_update_notification_none">"Hiçbiri"</string>
+    <string name="filter_update_success">"Filtre listeleri güncellendi"</string>
+    <string name="filter_update_success_message">"%d alan adı başarıyla güncellendi."</string>
+    <string name="filter_update_failed_message">"Filtre listeleri güncellenemedi."</string>
+    <string name="filter_update_notification_channel">"Filtre Güncellemeleri"</string>
+    <string name="filter_update_notification_channel_desc">"Filtre listesi güncellemeleri için bildirimler"</string>
+
+    <!-- DNS Provider -->
+    <string name="dns_provider_title">"DNS Sunucusu"</string>
+    <string name="dns_category_standard">"Standart"</string>
+    <string name="dns_category_privacy">"Gizlilik odaklı"</string>
+    <string name="dns_category_family">"Ailece güvenli"</string>
+    <string name="dns_category_custom">"Gelenek"</string>
+    <string name="dns_custom_title">"Özel DNS"</string>
+    <string name="dns_custom_description">"Kendi DNS sunucu adreslerinizi girin."</string>
+    <string name="dns_custom_save">"Kaydetmek"</string>
+    <string name="dns_custom_cancel">"İptal etmek"</string>
+    <string name="dns_select_server">"DNS Sunucusu Seçin"</string>
+    <string name="dns_doh_badge">"Sağlık Bakanlığı"</string>
+    <string name="dns_doq_badge">"DoQ"</string>
+
+    <!-- Widget -->
+    <string name="widget_name">"Reklamları Engelle/Aç"</string>
+    <string name="widget_description">"Reklam engellemeyi açıp kapatın ve istatistikleri görüntüleyin."</string>
+    <string name="widget_toggle_description">"Reklam engellemeyi aç/kapat"</string>
+    <string name="widget_blocked_today">"Bugün engellendi"</string>
+    <string name="widget_protected">"Korunmuş"</string>
+    <string name="widget_unprotected">"Kapalı"</string>
+
+    <!-- Shortcuts -->
+    <string name="shortcut_toggle_vpn">"Reklam Engellemeyi Aç/Kapat"</string>
+    <string name="shortcut_toggle_vpn_short">"VPN'i Aç/Kapat"</string>
+    <string name="shortcut_toggle_vpn_disabled">"Açma/kapama düğmesi kullanılamıyor."</string>
+
+    <!-- Custom Rules -->
+    <string name="custom_rules">"Özel Kurallar"</string>
+    <string name="add_custom_rule">"Özel Kural Ekle"</string>
+    <string name="import_rules">"İthalat Kuralları"</string>
+    <string name="export_rules">"İhracat Kuralları"</string>
+    <string name="delete_all_rules">"Tüm Kuralları Sil"</string>
+    <string name="delete_all_rules_confirmation">"Tüm özel kuralları silmek istediğinizden emin misiniz? Bu işlem geri alınamaz."</string>
+    <string name="all_rules_deleted">"Tüm kurallar silindi."</string>
+    <string name="rule_added">"Kural başarıyla eklendi."</string>
+    <string name="rules_imported">"İçe aktarılan %d kural"</string>
+    <string name="rules_copied_to_clipboard">"Kurallar panoya kopyalandı"</string>
+    <string name="no_rules_to_export">"İhracat için herhangi bir kural yok."</string>
+    <string name="no_custom_rules">"Özel kurallar yok."</string>
+    <string name="tap_add_to_create_rule">"İlk özel kuralınızı oluşturmak için + işaretine dokunun."</string>
+    <string name="rule">"Kural"</string>
+    <string name="rules">"Tüzük"</string>
+    <string name="add_rule_hint">"Özel bir DNS kuralı girin:
+• Engelle: ||example.com^ veya example.com
+• Joker karakteri engelle: ||*.ads.example.com^ veya *.ads.example.com
+• İzin ver: @@||example.com^
+• Yorum: ! Bu bir yorumdur"</string>
+    <string name="import_rules_hint">"Yapıştırma kuralları (her satıra bir tane):"</string>
+    <string name="import_label">"İçe aktarmak"</string>
+    <string name="custom_rules_help">"Özel Kurallar Yardımı"</string>
+    <string name="custom_rules_help_text">"Özel kurallar, filtre listelerinden önce uygulanır ve bu da onlara daha yüksek öncelik verir.
+
+Desteklenen formatlar:
+• Alan adını engelle: ||example.com^ veya example.com
+• Joker karakteri engelle: ||*.ads.example.com^ veya *.ads.example.com
+• Alan adına izin ver: @@||example.com^
+• Joker karaktere izin ver: @@||*.example.com^
+• Yorum: ! Bu bir yorumdur
+
+Örnekler:
+• ||ads.example.com^ - ads.example.com ve tüm alt alan adlarını engeller
+• ||*.tracker.com^ - tracker.com'un herhangi bir alt alan adını engeller (ancak tracker.com'un kendisini değil)
+• @@||example.com^ - example.com'a izin verir (engelleme listelerini geçersiz kılar)
+• *.ads.example.com - x.ads.example.com, y.ads.example.com vb. engeller
+• ! Benim özel kurallarım - Bir yorum satırı"</string>
+    <string name="add">"Eklemek"</string>
+    <string name="delete">"Silmek"</string>
+    <string name="cancel">"İptal etmek"</string>
+    <string name="ok">"TAMAM"</string>
+    <string name="block_this_domain">"Bu alan adını engelle"</string>
+    <string name="add_to_custom_rules">"Özel kurallara ekle"</string>
+
+    <!-- App Management -->
+    <string name="app_management_title">"Uygulama Yönetimi"</string>
+    <string name="app_management_subtitle">"%d uygulama"</string>
+    <string name="app_management_subtitle_filtered">"%1$d / %2$d uygulama"</string>
+    <string name="app_management_desc">"Uygulama bazında VPN yönlendirmesini yönetin ve istatistikleri görüntüleyin."</string>
+    <string name="app_management_search">"Arama uygulamaları…"</string>
+    <string name="app_management_loading">"Uygulamalar yükleniyor…"</string>
+    <string name="app_management_sort">"Düzenlemek"</string>
+    <string name="app_management_sort_name">"İsime göre sırala"</string>
+    <string name="app_management_sort_queries">"Sorgulara göre sırala"</string>
+    <string name="app_management_sort_blocked">"Engellenenlere göre sırala"</string>
+    <string name="app_management_queries">"Sorgular: %d"</string>
+    <string name="app_management_blocked">"Engellendi: %d"</string>
+    <string name="app_management_system">"Sistem"</string>
+    <string name="app_management_vpn_toggle">"%s için VPN yönlendirmesi"</string>
+
+    <!-- Improved DNS Log Screen -->
+    <string name="log_status_blocked">"Engellendi"</string>
+    <string name="log_status_allowed">"İzin verilmiş"</string>
+    <string name="log_status_whitelisted">"Beyaz listeye alınmış"</string>
+    <string name="log_detail_title">"Alan Adı Ayrıntıları"</string>
+    <string name="log_detail_query_type">"Sorgu Türü"</string>
+    <string name="log_detail_response_time">"Yanıt Süresi"</string>
+    <string name="log_detail_status">"Durum"</string>
+    <string name="log_detail_app">"Uygulama"</string>
+    <string name="log_detail_resolved_ip">"Çözümlenmiş IP"</string>
+    <string name="log_detail_blocked_by">"Engellendi"</string>
+    <string name="log_detail_timestamp">"Zaman"</string>
+    <string name="log_detail_unknown">"Bilinmiyor"</string>
+    <string name="log_detail_na">"Yok"</string>
+    <string name="log_realtime_on">"Gerçek zamanlı: AÇIK"</string>
+    <string name="log_realtime_off">"Gerçek zamanlı: KAPALI"</string>
+    <string name="log_time_range_all">"Tüm Zamanlar"</string>
+    <string name="log_time_range_1h">"1 saat"</string>
+    <string name="log_time_range_6h">"6 saat"</string>
+    <string name="log_time_range_24h">"24 saat"</string>
+    <string name="log_time_range_7d">"7d"</string>
+    <string name="log_filter_all_apps">"Tüm Uygulamalar"</string>
+    <string name="log_bulk_mode">"Seçme"</string>
+    <string name="log_bulk_selected">"%d seçildi"</string>
+    <string name="log_bulk_block">"Tümünü Engelle"</string>
+    <string name="log_bulk_whitelist">"Tümünü Beyaz Listeye Ekle"</string>
+    <string name="log_bulk_done">"Tamamlamak"</string>
+    <string name="log_unblock_domain">"Bu alan adının engelini kaldır"</string>
+
+    <string name="log_domain_unblocked">Domain unblocked: %s</string>
+    <string name="log_action_unblock">Unblock</string>
+    <string name="log_action_block">Block</string>
+    <string name="block_reason_custom_rule">Custom Block Rule</string>
+    <string name="block_reason_filter_list">Filter List</string>
+    <string name="block_reason_security">Dangerous Website</string>
+    <!-- Security Stats -->
+    <string name="home_security_threats">Threats Blocked</string>
+    <string name="filter_category_ad">Ad Blocking</string>
+    <string name="filter_category_security">Security</string>
+    <!-- Statistics Screen -->
+    <string name="nav_statistics">Stats</string>
+    <string name="stats_title">Statistics</string>
+    <string name="stats_overview">Overview</string>
+    <string name="stats_all_time_queries">All Time Queries</string>
+    <string name="stats_all_time_blocked">All Time Blocked</string>
+    <string name="stats_today_queries">Today Queries</string>
+    <string name="stats_today_blocked">Today Blocked</string>
+    <string name="stats_today_security">Today Threats</string>
+    <string name="stats_charts">Activity Charts</string>
+    <string name="stats_chart_4w">4 Weeks</string>
+    <string name="stats_chart_12m">12 Months</string>
+    <string name="stats_per_app">Per-App Statistics</string>
+    <string name="stats_app_queries_blocked">%1$s queries · %2$s blocked</string>
+
+    <!-- VPN Connecting Phases (progress feedback) -->
+    <string name="vpn_phase_loading_filters">Loading filter lists…</string>
+    <string name="vpn_phase_preparing_dns">Preparing DNS…</string>
+    <string name="vpn_phase_establishing">Establishing VPN tunnel…</string>
+
+    <!-- Notification Improvements -->
+    <string name="vpn_notification_stats_today">%1$d ads blocked today | Uptime %2$s</string>
+    <string name="vpn_notification_action_pause">Pause 1h</string>
+    <string name="vpn_notification_action_stop">Stop</string>
+    <string name="vpn_paused_title">BlockAds paused</string>
+    <string name="vpn_paused_text">Ad blocking paused for 1 hour. Will resume automatically.</string>
+    <string name="daily_summary_channel_name">Daily Summary</string>
+    <string name="daily_summary_channel_description">End-of-day ad blocking summary</string>
+    <string name="daily_summary_title">Daily Protection Summary</string>
+    <string name="daily_summary_text">Today we blocked %1$d ads for you!</string>
+    <string name="milestone_channel_name">Milestones</string>
+    <string name="milestone_channel_description">Achievements when you reach ad blocking milestones</string>
+    <string name="milestone_title">🎉 Milestone reached!</string>
+    <string name="milestone_text">You\'ve blocked %1$s ads! Keep going!</string>
+    <string name="settings_category_notifications">Notifications</string>
+    <string name="settings_category_notifications_desc">Daily summary, milestones</string>
+    <string name="settings_daily_summary">Daily summary</string>
+    <string name="settings_daily_summary_desc">Show end-of-day blocking summary</string>
+    <string name="settings_milestone_notifications">Milestone notifications</string>
+    <string name="settings_milestone_notifications_desc">Notify when you reach blocking milestones</string>
+    <!-- Protection Profiles -->
+    <string name="profile_title">Protection Profiles</string>
+    <string name="profile_section_profiles">Profiles</string>
+    <string name="profile_section_schedules">Schedules</string>
+    <string name="profile_name_default">Default</string>
+    <string name="profile_name_strict">Strict</string>
+    <string name="profile_name_family">Family</string>
+    <string name="profile_name_gaming">Gaming</string>
+    <string name="profile_name_custom">Custom</string>
+    <string name="profile_name_strict_family">Strict Family</string>
+    <string name="profile_desc_strict_family">Maximum blocking: ads, trackers, adult content &amp; gambling</string>
+    <string name="profile_desc_default">Balanced blocking: basic ads and trackers</string>
+    <string name="profile_desc_strict">Aggressive blocking: ads, trackers, analytics, telemetry</string>
+    <string name="profile_desc_family">Safe browsing: ads, adult content, gambling</string>
+    <string name="profile_desc_gaming">Light blocking: basic ads only, optimized for low latency</string>
+    <string name="profile_desc_custom">Your personalized protection rules</string>
+    <string name="profile_active">Active</string>
+    <string name="profile_switched">Profile switched</string>
+    <string name="profile_created">Profile created</string>
+    <string name="profile_deleted">Profile deleted</string>
+    <string name="profile_create_custom">Create Custom Profile</string>
+    <string name="profile_name_label">Profile Name</string>
+    <string name="profile_add_schedule">Add Schedule</string>
+    <string name="profile_schedule_start">Start Time</string>
+    <string name="profile_schedule_end">End Time</string>
+    <string name="profile_schedule_days">Days</string>
+    <string name="profile_schedule_added">Schedule added</string>
+    <string name="profile_schedule_deleted">Schedule deleted</string>
+    <string name="profile_schedule_every_day">Every day</string>
+    <string name="profile_day_mon">Mon</string>
+    <string name="profile_day_tue">Tue</string>
+    <string name="profile_day_wed">Wed</string>
+    <string name="profile_day_thu">Thu</string>
+    <string name="profile_day_fri">Fri</string>
+    <string name="profile_day_sat">Sat</string>
+    <string name="profile_day_sun">Sun</string>
+    <string name="settings_profiles">Protection Profiles</string>
+    <string name="settings_profiles_desc">Preset configurations for different use cases</string>
+    <!-- Accessibility -->
+    <string name="accessibility_toggle_vpn">Toggle VPN protection</string>
+    <string name="accessibility_vpn_active">VPN protection is active</string>
+    <string name="accessibility_vpn_inactive">VPN protection is inactive</string>
+    <string name="accessibility_vpn_connecting">VPN is connecting</string>
+    <string name="accessibility_stat_card">%1$s: %2$s</string>
+    <string name="accessibility_block_rate_value">Block rate %1$s percent</string>
+    <string name="accessibility_navigate_back">Navigate back</string>
+    <!-- Firewall -->
+    <string name="firewall_title">Firewall</string>
+    <string name="firewall_subtitle">Per-app internet control</string>
+    <string name="firewall_count">%d apps blocked</string>
+    <string name="firewall_search">Search apps…</string>
+    <string name="firewall_enable">Enable Firewall</string>
+    <string name="firewall_enable_desc">Block internet access for selected apps via DNS</string>
+    <string name="firewall_block_wifi">Block Wi-Fi</string>
+    <string name="firewall_block_mobile">Block Mobile Data</string>
+    <string name="firewall_schedule">Schedule</string>
+    <string name="firewall_schedule_desc">Block only during specific hours</string>
+    <string name="firewall_schedule_from">From</string>
+    <string name="firewall_schedule_to">To</string>
+    <string name="firewall_app_blocked">Internet blocked</string>
+    <string name="firewall_app_not_blocked">Internet allowed</string>
+    <string name="firewall_rule_saved">Firewall rule saved</string>
+    <string name="firewall_rule_removed">Firewall rule removed</string>
+    <string name="firewall_configure">Configure Rule</string>
+    <string name="firewall_channel_name">Firewall Alerts</string>
+    <string name="firewall_channel_description">Notifications when apps are blocked by firewall</string>
+    <string name="firewall_notification_title">App blocked by firewall</string>
+    <string name="firewall_notification_text">%s was blocked from accessing the internet</string>
+    <string name="firewall_network_wifi">Wi-Fi</string>
+    <string name="firewall_network_mobile">Mobile</string>
+    <string name="firewall_network_all">All</string>
+    <string name="firewall_status_schedule"> · %1$02d:%2$02d–%3$02d:%4$02d</string>
+    <string name="firewall_schedule_hour_plus">Hour +</string>
+    <string name="firewall_schedule_minute_plus">Min +</string>
+    <string name="block_reason_firewall">Firewall</string>
+    <string name="settings_firewall">Firewall</string>
+    <string name="settings_firewall_desc">Block internet access per app</string>
+
+    <!-- Share & Rate -->
+    <string name="settings_sponsor">Sponsor Us</string>
+    <string name="settings_sponsor_desc">Support BlockAds development on GitHub</string>
+    <string name="settings_community">Community</string>
+    <string name="settings_reddit">Reddit</string>
+    <string name="settings_reddit_desc">Join our community on Reddit</string>
+    <string name="settings_telegram">Telegram</string>
+    <string name="settings_telegram_desc">Join our chat on Telegram</string>
+    <string name="filter_setup_active_count">%1$d active</string>
+    <string name="copied_url">Copied URL</string>
+    <string name="filter_error_invalid_url">Please enter a valid URL (http:// or https://)</string>
+    <string name="filter_error_duplicate_url">This filter list already exists</string>
+    <string name="filter_error_invalid_content">URL does not contain a valid filter list</string>
+    <string name="filter_chip_all">All</string>
+    <string name="filter_chip_enabled">Enabled</string>
+    <string name="filter_chip_disabled">Disabled</string>
+    <string name="dns_error_duplicate">Fallback DNS cannot be the same as Custom DNS</string>
+</resources>

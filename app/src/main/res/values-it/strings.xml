@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">BlockAds</string>
     <string name="app_tagline">Navigazione Senza Pubblicità</string>
     <string name="notification_channel_name">Servizio Blocco Annunci</string>
     <string name="notification_channel_description">Mostra quando il blocco annunci VPN è attivo</string>

@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">BlockAds</string>
     <string name="app_tagline">Интернет без рекламы</string>
     <string name="notification_channel_name">Сервис блокировки рекламы</string>
     <string name="notification_channel_description">Показывается, когда VPN-блокировщик рекламы активен</string>

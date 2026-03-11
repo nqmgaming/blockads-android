@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">BlockAds</string>
     <string name="app_tagline">ท่องเว็บโดยไม่มีโฆษณา</string>
     <string name="notification_channel_name">บริการบล็อกโฆษณา</string>
     <string name="notification_channel_description">แสดงเมื่อตัวบล็อกโฆษณา VPN ทำงานอยู่</string>

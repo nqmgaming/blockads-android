@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BlockAds</string>
+    <string name="app_name" translatable="false">BlockAds</string>
     <string name="app_tagline">Ad-Free Browsing</string>
     <string name="notification_channel_name">Ad Blocker Service</string>
     <string name="notification_channel_description">Shows when VPN ad blocker is active</string>

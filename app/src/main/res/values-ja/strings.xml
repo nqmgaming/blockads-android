@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">BlockAds</string>
     <string name="app_tagline">広告なしのブラウジング</string>
     <string name="notification_channel_name">広告ブロッカーサービス</string>
     <string name="notification_channel_description">VPN広告ブロッカーが有効な場合に表示されます</string>

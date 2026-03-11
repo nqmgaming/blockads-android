@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">BlockAds</string>
     <string name="app_tagline">无广告浏览</string>
     <string name="notification_channel_name">广告拦截服务</string>
     <string name="notification_channel_description">当VPN广告拦截器处于活动状态时显示</string>
