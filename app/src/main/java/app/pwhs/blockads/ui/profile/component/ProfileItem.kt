@@ -30,7 +30,6 @@ import app.pwhs.blockads.R
 import app.pwhs.blockads.data.entities.ProtectionProfile
 import app.pwhs.blockads.ui.theme.TextSecondary
 import app.pwhs.blockads.util.profileDescription
-import app.pwhs.blockads.util.profileDisplayName
 import app.pwhs.blockads.util.profileIcon
 
 @Composable
@@ -71,7 +70,7 @@ fun ProfileItem(
 
         Column(modifier = Modifier.weight(1f)) {
             Text(
-                text = profileDisplayName(profile),
+                text = profile.name,
                 style = MaterialTheme.typography.titleSmall,
                 fontWeight = if (isActive) FontWeight.Bold else FontWeight.Normal,
                 color = if (isActive) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurface

@@ -117,13 +117,3 @@ fun profileDescription(type: String): String = when (type) {
     ProtectionProfile.TYPE_GAMING -> stringResource(R.string.profile_desc_gaming)
     else -> stringResource(R.string.profile_desc_custom)
 }
-
-@Composable
-fun profileDisplayName(profile: ProtectionProfile?): String = when (profile?.profileType) {
-    ProtectionProfile.TYPE_DEFAULT -> stringResource(R.string.profile_name_default)
-    ProtectionProfile.TYPE_STRICT -> stringResource(R.string.profile_name_strict)
-    ProtectionProfile.TYPE_FAMILY -> stringResource(R.string.profile_name_family)
-    ProtectionProfile.TYPE_GAMING -> stringResource(R.string.profile_name_gaming)
-    ProtectionProfile.TYPE_STRICT_FAMILY -> stringResource(R.string.profile_name_strict_family)
-    else -> stringResource(R.string.profile_name_custom)
-}

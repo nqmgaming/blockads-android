@@ -258,7 +258,10 @@ fun HomeApp(onRequestVpnPermission: () -> Unit = {}) {
     ) {
         NavDisplay(
             backStack = currentBackStack,
-            onBack = { if (currentBackStack.size > 1) currentBackStack.removeLastOrNull() },
+            onBack = {
+                if (currentBackStack.size > 1) currentBackStack.removeLastOrNull()
+                showBottomBar = currentBackStack.size <= 1
+            },
             entryProvider = entryProvider {
                 entry<HomeKey> {
                     HomeScreen(

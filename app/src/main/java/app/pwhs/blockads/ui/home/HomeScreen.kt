@@ -82,7 +82,6 @@ import app.pwhs.blockads.util.formatCount
 import app.pwhs.blockads.util.formatDataSize
 import app.pwhs.blockads.util.formatTimeSince
 import app.pwhs.blockads.util.formatUptimeShort
-import app.pwhs.blockads.util.profileDisplayName
 import app.pwhs.blockads.util.profileIcon
 import com.google.accompanist.drawablepainter.rememberDrawablePainter
 import org.koin.androidx.compose.koinViewModel
@@ -260,7 +259,7 @@ fun HomeScreen(
                         modifier = Modifier.size(16.dp)
                     )
                     Text(
-                        text = profileDisplayName(activeProfile),
+                        text = activeProfile?.name ?: stringResource(R.string.profile_name_default),
                         style = MaterialTheme.typography.labelMedium,
                         color = MaterialTheme.colorScheme.primary
                     )

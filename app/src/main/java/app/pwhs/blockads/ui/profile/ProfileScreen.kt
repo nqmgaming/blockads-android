@@ -47,7 +47,6 @@ import app.pwhs.blockads.ui.profile.component.CreateCustomProfileDialog
 import app.pwhs.blockads.ui.profile.component.ProfileItem
 import app.pwhs.blockads.ui.profile.component.ScheduleItem
 import app.pwhs.blockads.ui.settings.component.SectionHeader
-import app.pwhs.blockads.util.profileDisplayName
 import org.koin.androidx.compose.koinViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -166,7 +165,7 @@ fun ProfileScreen(
                         schedulesWithProfiles.forEachIndexed { index, (schedule, profile) ->
                             ScheduleItem(
                                 schedule = schedule,
-                                profileName = profileDisplayName(profile),
+                                profileName = profile.name,
                                 onToggle = { viewModel.toggleSchedule(schedule) },
                                 onDelete = { viewModel.deleteSchedule(schedule) }
                             )
