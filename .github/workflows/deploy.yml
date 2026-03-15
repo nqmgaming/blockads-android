@@ -46,12 +46,6 @@ jobs:
           restore-keys: |
             gradle-${{ runner.os }}-
 
-      - name: Set up Go
-        uses: actions/setup-go@v5
-        with:
-          go-version: '1.21'
-          cache: true
-
       # Signing
       - name: Decode keystore
         run: echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > app/blockads-release.jks
